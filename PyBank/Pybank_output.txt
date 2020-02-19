@@ -1,0 +1,7 @@
+Financial Analysis
+---------------------------------------------
+Total Months:  86
+Total:   $38382578
+Average Change:  $446309.05
+Greast Increase in Profits:  Feb-2012($1170593)
+Greast Decrease in Profits:  Sep-2013($-1196225)
