@@ -13,12 +13,8 @@ import numpy as np
 data_folder=Path("/Users/jadetao/Documents/python-challenge/PyPoll/")
 PyPoll_csv_path = data_folder / "PyPoll_Resources_election_data.csv"
 
-vote_K=0
-vote_C=0
-vote_L=0
-vote_O=0
+
 counter=0
-pct_vote=0.0
 
 #set a Numpy array data types for candi
 dty = [('name', 'U8'), ('PCT', float), ('Votes', int)]

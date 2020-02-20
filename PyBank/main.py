@@ -31,7 +31,7 @@ with open(Pybank_csv_path) as csvfile:
 #calculating average for profit change              
 Avg=Total/TotalMonth
 
-#sort dictionary by it values 
+#convert datatype of values to int than sort dictionary by it values 
 d=dict((k,int(v)) for k,v in Dicta.items())
 sortedList=sorted(d.items(),key=lambda x:x[1])
 
