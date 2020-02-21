@@ -34,7 +34,7 @@ with open(Pybank_csv_path) as csvfile:
 Dicta=dict(matrList)
 
 #calculating average for profit change              
-Avg=(int(matrList[0][1])+profit_last)/(TotalMonth-1)
+Avg=(profit_last -int(matrList[0][1]))/(TotalMonth-1)
 
 
 
