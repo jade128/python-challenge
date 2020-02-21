@@ -16,6 +16,8 @@ Pybank_csv_path = data_folder / "PyBank_Resources_budget_data.csv"
 TotalMonth=0
 Total=0
 matrList = []
+profit_last=0
+Avg=0
 
 with open(Pybank_csv_path) as csvfile:
     csvreader = csv.reader(csvfile,delimiter=",")
@@ -23,17 +25,23 @@ with open(Pybank_csv_path) as csvfile:
     
     #counting months and calculateing total, add records to list then convert it to dictionary
     for row in csvreader:
+
         Total +=int(row[1])
         TotalMonth +=1
         matrList.append(row)
-        Dicta=dict(matrList)
+        profit_last=int(row[1])
+        
+Dicta=dict(matrList)
 
 #calculating average for profit change              
-Avg=Total/TotalMonth
+Avg=(int(matrList[0][1])+profit_last)/(TotalMonth-1)
+
+
 
 #convert datatype of values to int than sort dictionary by it values 
 d=dict((k,int(v)) for k,v in Dicta.items())
 sortedList=sorted(d.items(),key=lambda x:x[1])
+
 
 #print results to screen
 print("Financial Analysis")
