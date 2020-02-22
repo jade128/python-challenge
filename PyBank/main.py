@@ -42,7 +42,7 @@ new_np[0][3]=0
 new_np1=np.delete(new_np,np.s_[1:3],1)
 
 ndict=dict(new_np1)
-#print(ndict)
+
 
 Dicta=dict(matrList)
 #calculating average for profit change              
